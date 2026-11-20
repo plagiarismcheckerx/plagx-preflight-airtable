@@ -1,0 +1,18 @@
+{
+  "name": "plagx-preflight-airtable",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plagx Draft Preflight for Airtable: check a long-text field for word count, citations, punctuation and basic grammar. By Plagiarism Checker X.",
+  "scripts": {
+    "test": "node --test",
+    "lint": "eslint frontend --ext .js",
+    "sync": "node -e \"require('fs').cpSync('../plagx-preflight/src','frontend/lib',{recursive:true})\""
+  },
+  "dependencies": {
+    "@airtable/blocks": "1.19.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "author": "Plagiarism Checker X (https://plagiarismcheckerx.com/)",
+  "license": "MIT"
+}
